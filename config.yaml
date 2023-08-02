@@ -1,4 +1,4 @@
-baseurl: "/"
+baseurl: "https://johnlecocq.netlify.app/"
 languageCode: "en-us"
 title: "Hugo XMag"
 theme: "hugo-xmag"
