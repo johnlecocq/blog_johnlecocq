@@ -32,9 +32,9 @@ menu:
       url: /index.xml
 
 params:
-  description: "A website built through Hugo and blogdown."
+  description: "Reporting Since 2023"
   footer: "&copy; John Lecocq 2023 | [Github](https://github.com/johnlecocq) | [Linkedin](https://www.linkedin.com/in/john-rooster/)"
-  github_edit: "https://github.com/johnlecocq/blog_johnlecocq.git"
+  github_edit: "https://github.com/johnlecocq/blog_johnlecocq/edit"
   summary_length: 300
   text:
     back: "&larr; Back to Home"

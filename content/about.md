@@ -29,8 +29,6 @@ Why you should follow this blog:
 
 - Everyone else is banned
 
-Most features can be configured through `config.toml`, and a few can be enabled by custom layouts.
-
 # Content
 
 By default, your site title will be displayed at the top in Blackletter fonts if your web browser and operating system support Blackletter fonts. Essentially, for every English letter `X` in your site title, it is substituted with `&Xfr;`, e.g. the Blackletter version of `A` is `&Afr;` (&Afr;). Below are the letters from A to Z:
