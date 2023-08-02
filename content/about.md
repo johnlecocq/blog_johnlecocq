@@ -1,41 +1,37 @@
 ---
-author: Yihui Xie
-title: About Hugo XMag
+author: John Lecocq
+title: About Reports
 ---
 
-**XMag** is the second Hugo theme I have designed. It is based on my first Hugo theme [**XMin**](https://github.com/yihui/hugo-xmin), and similarly, features minimalism but with a magazine style on the homepage inspired by [The Signpost](https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost) on Wikipedia. You can find its source code on Github: https://github.com/yihui/hugo-xmag (licensed under MIT).
+**Reports** is a blog written by John Lecocq. In it you will find formal and informal articles about sports, economics, health, politics, and more. It is written in [R](https://www.r-project.org/foundation/) using Blogdown [Yihui Xie](https://yihui.org/en/) and Hugo. The theme for this site is called XMag which is available on Github [here w/ MIT license](https://github.com/yihui/hugo-xmag).
 
-# Features
+# Purpose
 
-This theme includes a few cool features:
+What you will get from this blog is:
 
-- Responsive article summary blocks on homepage
+- A biomedical engineer's perspective on current affairs within in the US
 
-- Thumbnails in summary blocks
+- Data-driven analyses to help characterize the world
 
-- Magazine title in Blackletter (&Bfr;&Lfr;&Afr;&Cfr;&Kfr; &Lfr;&Efr;&Tfr;&Tfr;&Efr;&Rfr;)
+- Short videos, images, and figures in to help form an intuition on the issues
 
-- Github edit links
+- References for factual statements and inclusion of relevant data
 
-- Author info and site info at the bottom of an article
+- Proposals for civil, economic and healthcare solutions
 
-- Multiple authors of a single page
+Why you should follow this blog:
 
-- MathJax for LaTeX math expressions
+- To consume quick, digestible information on various important topics
 
-It also supports features that are probably not even worth mentioning:
+- To keep in contact with the author, John Lecocq
 
-- Google Analytics
+- To reference scholarly and authoritative sources
 
-- highlight.js for syntax highlighting of code blocks
-
-- Display categories and tags on single pages
-
-- Table of contents for single pages
+- Everyone else is banned
 
 Most features can be configured through `config.toml`, and a few can be enabled by custom layouts.
 
-# config.toml
+# Content
 
 By default, your site title will be displayed at the top in Blackletter fonts if your web browser and operating system support Blackletter fonts. Essentially, for every English letter `X` in your site title, it is substituted with `&Xfr;`, e.g. the Blackletter version of `A` is `&Afr;` (&Afr;). Below are the letters from A to Z:
 
@@ -114,8 +110,3 @@ You can also append arbitrary text to each article through `info.html`. For exam
 
 There are other partial templates in this theme and I encourage you to read the source code to figure out what they do.
 
-# Final words
-
-I feel the world has become so noisy that I'm often at a loss when looking at a web page, because there are so many things to distract me. I was heavily influenced by the book [_Amusing Ourselves to Death_](https://en.wikipedia.org/wiki/Amusing_Ourselves_to_Death) after I read it in early 2017. From then on, I was hoping to design a theme for a website that gives articles the top priority. Everything else must give way to articles. That is why the navigation menu is at the bottom instead of in the conventional position (top or sidebar). There isn't much to do other than reading an article when you open a page. By the way, this is a pure plain-text theme. You can certainly add images if you want, but this theme itself contains zero binary files. Out of my [OCD](https://en.wikipedia.org/wiki/Obsessive%E2%80%93compulsive_disorder), I was just trying to push the limits of web design without using any images or JavaScript libraries (I'm a totally amateur).^[I used MathJax and highlight.js anyway in this theme because they are helpful.]
-
-I hope you can enjoy this theme. Again, the source code is [on Github](https://github.com/yihui/hugo-xmag). Happy hacking!

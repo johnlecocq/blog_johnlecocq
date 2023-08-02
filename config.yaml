@@ -1,6 +1,6 @@
 baseurl: "https://johnlecocq.netlify.app/"
 languageCode: "en-us"
-title: "Hugo XMag"
+title: "Reports"
 theme: "hugo-xmag"
 googleAnalytics: ""
 disqusShortname: ""
@@ -33,8 +33,8 @@ menu:
 
 params:
   description: "A website built through Hugo and blogdown."
-  footer: "&copy; [Yihui Xie](https://yihui.org) 2017 - 2020 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
-  github_edit: "https://github.com/yihui/hugo-xmag/edit/master/exampleSite/content/"
+  footer: "&copy; John Lecocq 2023 | [Github](https://github.com/johnlecocq) | [Linkedin](https://www.linkedin.com/in/john-rooster/)"
+  github_edit: "https://github.com/johnlecocq/blog_johnlecocq.git"
   summary_length: 300
   text:
     back: "&larr; Back to Home"
