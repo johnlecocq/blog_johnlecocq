@@ -53,7 +53,7 @@ drugs_clean <- rbind(drugs_past, drugs_future) %>%
 
 ## Describing the Analysis
 
-The goal of the analysis was to estimate a lower bound for the US black market size. To do so, two small additions to the data were made. That was to add two new columns. One called "Cost per lb" for each of the drugs. These values were sourced from various sites the web (now the FBI is watching me, all I do for you). The other column was called "Confiscation Total" which was defined as Pounds of Drugs Seized times Cost per lb. Otherwise, how would one calculate total "street" economic activity for a given confiscation? SHown below, is the R code used to make these two additional columns: (1) "Cost per pound" and (2) "Confiscation Total", for the interested party. 
+The goal of the analysis was to estimate a lower bound for the US black market size. To do so, two small additions to the data were made. That was to add two new columns. One called "Cost per lb" for each of the drugs. These values were sourced from various sites the web (now the FBI is watching me, all I do for you). The other column was called "Confiscation Total" which was defined as Pounds of Drugs Seized times Cost per lb. Otherwise, how would one calculate total "street" economic activity for a given confiscation? Shown below, is the R code used to make these two additional columns: (1) "Cost per pound" and (2) "Confiscation Total", for the interested party. 
 
 ```r
 drugs <- read.csv(file = "nationwide-drugs.csv") %>% 
