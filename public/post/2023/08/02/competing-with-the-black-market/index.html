@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Competing with the black market | Reports</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+
+  </head>
+
+  <body class="page">
+    <nav class="header">
+      <div class="banner">
+<a href="/" class="text">
+&Rfr;&Efr;&Pfr;&Ofr;&Rfr;&Tfr;&Sfr;
+</a>
+</div>
+
+      <div class="head-meta">
+      
+        <span><a href="/">&larr; Back to Home</a></span>
+        <span class="date">2023-08-02</span>
+        
+        
+        
+          
+        
+        
+        
+        <span><a href="https://github.com/johnlecocq/blog_johnlecocq/editpost/2023-08-02-the-black-market-and-how-it-can-be-used-for-good/index.md">Edit this page &rarr;</a></span>
+        
+        
+      
+      </div>
+    </nav>
+
+<div class="container">
+<article>
+<div class="article-meta">
+
+  <div class="categories">
+  
+    <a href="/categories/discussion">Discussion</a>
+  
+     &hercon; <a href="/categories/economics">Economics</a>
+  
+     &hercon; <a href="/categories/health">Health</a>
+  
+  </div>
+
+  <h1><span class="title">Competing with the black market</span></h1>
+
+  
+  <h3 class="author">John Lecocq
+</h3>
+  
+
+  
+  <p>Tags: <a href="/tags/solutions">Solutions</a>; <a href="/tags/black-market">Black Market</a>; <a href="/tags/drug-cartels">Drug Cartels</a>; <a href="/tags/pharma">Pharma</a>
+  </p>
+  
+  
+
+</div>
+
+
+
+<main>
+<p>The US black market is the sum of all un-taxed economic activity. Sounds great! Where do I sign up? Right&hellip; Well, the catch is that it is illegal. Despite this fact, it is still enormous. This article discusses:</p>
+<ul>
+<li>Economic activity that makes up black markets</li>
+<li>Estimated size of the US black market</li>
+<li>How that relates to other countries</li>
+<li>How the white market can compete</li>
+<li>Why this matters</li>
+</ul>
+<h1 id="black-market-basics">Black Market Basics</h1>
+<h1 id="estimated-size-of-the-us-black-market">Estimated Size of the US Black Market</h1>
+<p>How does one estimate the size of the black market? This is certainly a large undertaking. Rather than calculate every part of the black market, I will attempt to provide, at least, a minimum size here.</p>
+<p>I have derived a reasonable minimum from a dataset provided publicly by The United States Federal Department of Customs and Border Protection (CBP).</p>
+<h2 id="describing-the-data">Describing the data</h2>
+<p>The data used in this analysis documented the month, year, type and weight of drugs confiscated by CBP from January 2020 to June 2023. It was publicly available on their official website. It was downloaded on August, 8 2023. There were 3 months of data (OCT, NOV, DEC) from 2023 that had not yet occurred. These data points were not logical and were removed. The code used to remove this data is shown below.</p>
+<pre><code class="language-r">drugs_past &lt;- drugs %&gt;% 
+  filter(drugs$FY == &quot;2020&quot; |
+         drugs$FY == &quot;2021&quot; |
+         drugs$FY == &quot;2022&quot;) 
+drugs_future &lt;- drugs %&gt;% 
+  filter(drugs$FY == &quot;2023 (FYTD)&quot; &amp;
+           drugs$Month..abbv. != &quot;OCT&quot; &amp;
+           drugs$Month..abbv. != &quot;NOV&quot; &amp;
+           drugs$Month..abbv. != &quot;DEC&quot;)
+drugs_clean &lt;- rbind(drugs_past, drugs_future) %&gt;% 
+  mutate(&quot;Date&quot; = as.Date(paste0(&quot;1&quot;,Month..abbv., FY), &quot;%d%B%Y&quot;),
+         &quot;Weight&quot; = as.numeric(Sum.Qty..lbs.))
+</code></pre>
+<h2 id="describing-the-analysis">Describing the Analysis</h2>
+<p>The goal of the analysis was to estimate a lower bound for the US black market size. To do so, two small additions to the data were made. That was to add two new columns. One called &ldquo;Cost per lb&rdquo; for each of the drugs. These values were sourced from various sites the web (now the FBI is watching me, all I do for you). The other column was called &ldquo;Confiscation Total&rdquo; which was defined as Pounds of Drugs Seized times Cost per lb. Otherwise, how would one calculate total &ldquo;street&rdquo; economic activity for a given confiscation? SHown below, is the R code used to make these two additional columns: (1) &ldquo;Cost per pound&rdquo; and (2) &ldquo;Confiscation Total&rdquo;, for the interested party.</p>
+<pre><code class="language-r">drugs &lt;- read.csv(file = &quot;nationwide-drugs.csv&quot;) %&gt;% 
+  mutate(&quot;Cost per lb&quot; = if_else(
+    Drug.Type == &quot;Marijuana&quot;, 4480, if_else(
+    Drug.Type == &quot;Cocaine&quot;, 44800, if_else(
+    Drug.Type == &quot;Methamphetamine&quot;, 35840, if_else(
+    Drug.Type == &quot;Lsd&quot;, 17500*28*16, if_else(
+    Drug.Type == &quot;Fentanyl&quot;, 1470*28*16, if_else(
+    Drug.Type == &quot;Ecstasy&quot;, 150*28*16, 4480)))))),
+    &quot;Confiscation Total&quot; = `Cost per lb`*Sum.Qty..lbs.)
+</code></pre>
+<h2 id="data-exploration">Data Exploration</h2>
+<p>After wrangling in the data, the next step in a data analysis is to explore and understand it. To do so, it was visualized in a number of ways using bar charts. The chart below shows the Weight of Drugs Confiscated by the CBP from 2020 to June, 2023.</p>
+<h3 id="total-weight-of-confiscated-drugs-from-2020-jun2023">Total Weight of Confiscated Drugs from 2020-Jun2023</h3>
+<div class="figure">
+<img style="display: block;margin-left: auto;margin-right: auto;width: 90%;" src="https://johnlecocq.netlify.app/post/2023/08/02/competing-with-the-black-market/index_files/plots/drugs-confiscated-by-type.svg" alt="Bar chart of drugs confiscated by type over time." />
+<p class="caption"><span id="fig:weight_time"></span>Figure 1: A simple bar chart showing the weight of drugs (in lbs) confiscated by CBP From 2020 to June, 2023.</p>
+</div>
+<h1 id="solutions">Solutions</h1>
+<p>The amount of money that can be generated is immense. A great solution will reduce black market size and increase white market size. This cannot be done by allowing drugs to be legalized for use, as we know from the pacific NW. They are still a liability for anyone providing them. So, what we do is use the existing infrastructure of the US healthcare system, and reduce the burden on the healthcare professionals prescribing the drugs. The plan is simple:</p>
+<ul>
+<li>Big pharmaceutical companies should be expanded to produce the most popular street drugs</li>
+<li>They should hire production and quality control staff</li>
+<li>They must lower their costs to compete with the black market</li>
+<li>Drug stores dispense the drugs to anyone that asks for them</li>
+<li>Anyone purchasing the drugs must be of a certain age and consent to the health, legal risks involved</li>
+<li>Educate people on what they are taking and how it can affect them</li>
+<li>Collect taxes on drug sales and related economic activity</li>
+</ul>
+<p>I know that it sounds a bit out there to recommend drug companies should help put the black market out of business, but this is a start. It is true that we also need to work on reducing human trafficking and illegal firearm sales. That will come at a later time. For now, let&rsquo;s just discuss why all of this even matters?</p>
+<h1 id="why-this-matters">Why This Matters</h1>
+<p>It can be reasoned that black transactions reduces inflation because they represent dollars leaving the money supply. However, there is money laundering.</p>
+<p>Economic activity that is untaxed.</p>
+<p>Profit for pharmaceutical companies. New jobs. More taxable transactions.</p>
+<p>Other crimes associated with black market transactions. People get ripped off, and take the law into their own hands.</p>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="article-meta article-footer">
+  <h3>About the Author</h3>
+  
+    <p>John Lecocq is a biomedical engineer living and working in Sarasota, Florida.</p>
+  
+</section>
+
+
+
+
+
+
+<nav class="post-nav">
+  <span class="nav-prev"></span>
+  <span class="nav-next"><a href="/post/2020/12/01/hello-r-markdown/">Hello R Markdown &rarr;</a></span>
+</nav>
+
+
+
+</article>
+</div>
+
+<script async src="//yihui.org/js/center-img.js"></script>
+
+<footer>
+
+<div class="footer">
+  <ul class="menu">
+    
+    <li><a href="/"><span data-hover="Home">Home</span></a></li>
+    
+    <li><a href="/about/"><span data-hover="About">About</span></a></li>
+    
+    <li><a href="/categories/"><span data-hover="Categories">Categories</span></a></li>
+    
+    <li><a href="/tags/"><span data-hover="Tags">Tags</span></a></li>
+    
+    <li><a href="/index.xml"><span data-hover="Subscribe">Subscribe</span></a></li>
+    
+  </ul>
+  
+  <div class="copyright">© John Lecocq 2023 | <a href="https://github.com/johnlecocq">Github</a> | <a href="https://www.linkedin.com/in/john-rooster/">Linkedin</a></div>
+  
+</div>
+</footer>
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script>
+hljs.configure({languages: []});
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+</body>
+</html>
+

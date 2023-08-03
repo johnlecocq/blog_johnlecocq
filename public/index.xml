@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>John Lecocq on Reports</title>
+    <link>https://johnlecocq.netlify.app/</link>
+    <description>Recent content in John Lecocq on Reports</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://johnlecocq.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Competing with the black market</title>
+      <link>https://johnlecocq.netlify.app/post/2023/08/02/competing-with-the-black-market/</link>
+      <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnlecocq.netlify.app/post/2023/08/02/competing-with-the-black-market/</guid>
+      <description>The US black market is the sum of all un-taxed economic activity. Sounds great! Where do I sign up? Right&amp;hellip; Well, the catch is that it is illegal. Despite this fact, it is still enormous. This article discusses:
+Economic activity that makes up black markets Estimated size of the US black market How that relates to other countries How the white market can compete Why this matters Black Market Basics Estimated Size of the US Black Market How does one estimate the size of the black market?</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>https://johnlecocq.netlify.app/post/2020/12/01/hello-r-markdown/</link>
+      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      
+      <guid>https://johnlecocq.netlify.app/post/2020/12/01/hello-r-markdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+    <item>
+      <title>A Plain Markdown Post</title>
+      <link>https://johnlecocq.netlify.app/post/2017/02/14/a-plain-markdown-post/</link>
+      <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnlecocq.netlify.app/post/2017/02/14/a-plain-markdown-post/</guid>
+      <description>This sample post is mainly for blogdown users. If you do not use blogdown, you can skip the first section. To know more about the Hugo XMag theme, please read the About page.
+1. Markdown or R Markdown This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
+You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.</description>
+    </item>
+    
+    <item>
+      <title>About Reports</title>
+      <link>https://johnlecocq.netlify.app/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnlecocq.netlify.app/about/</guid>
+      <description>Reports is a blog written by John Lecocq. In it you will find formal and informal articles about sports, economics, health, politics, and more. It is written in R using Blogdown Yihui Xie and Hugo. The theme for this site is called XMag which is available on Github here w/ MIT license.
+Purpose What you will get from this blog is:
+A biomedical engineer&amp;rsquo;s perspective on current affairs within in the US</description>
+    </item>
+    
+  </channel>
+</rss>
