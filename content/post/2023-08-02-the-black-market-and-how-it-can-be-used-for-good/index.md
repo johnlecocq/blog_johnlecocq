@@ -140,7 +140,7 @@ Assuming the black market is at least equal in value to the amount of drugs seiz
 
 # Solutions
 
-The amount of money transacted on the black market is immense, it is at least 20-30 Billion taxable dollars each year. An increasing majority of its size, as of 2022, is due to fentanyl. One can imagine this fentanyl is made cheaply, with low quality control, to make the business worthwhile for traffickers. 
+The amount of money transacted on the black market is immense, it is at least 20-30 Billion taxable dollars each year. An increasing majority of its size, as of 2021, is due to fentanyl. One can imagine this fentanyl is made cheaply, with low quality control, to make the business worthwhile for traffickers. 
 
 One way to decrease black market share and increase white market share is to enable competition. **Black market share may not be decreased by simply allowing drugs to be legalized for use.** They are still too expensive a liability for domestic, above board providers to provide to those looking to use them. The costs to produce, market and dispense drugs legally is currently prohibitive of competition, leaving room for the crime-riddled black market. If only it were possible to use existing infrastructure of the US pharmaceutical industry to product drugs and reduce the burden on the healthcare professionals prescribing the drugs. One plan goes like this:
 
