@@ -1,8 +1,8 @@
 ---
-title: "Analysis of the Black Market using Customs and Border Patrol Confiscation Data"
+title: "Analysis of Customs and Border Patrol Drug Confiscation Data Showing Increased YOY Values of Fentanyl Seized"
 author: "John Lecocq"
 date: "2023-08-02"
-slug: "competing-with-the-black-market"
+slug: "customs-and-border-patrol-drug-confiscations-2020-June2023"
 categories:
 - Economics
 - Black Market
