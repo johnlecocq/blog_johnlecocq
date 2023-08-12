@@ -51,7 +51,7 @@ Figure 1 showed that the FDA's RDI for protein and added sugars are equal. This 
 
 ## NIH
 
-From 30,000ft., the NIH data shows that infants require all the same nutrients as other groups, but in smaller amounts. Looking at the comparison graph (figure 3), one can see that infants require relative less nutrients, except for vitamin A, vitamin C, iron and iodine.
+From 30,000ft., the NIH data shows that infants require all the same nutrients as other groups, but, generally, in smaller amounts. **For example, the comparison graph below (figure 3) shows that infants require smaller amounts of most nutrients, excepting vitamin A, vitamin C, iron and iodine.** Infants require more of these nutrients than small children do. 
 
 <div class="figure">
 <img src="{{< blogdown/postref >}}index_files/plots/RDI_plot_nih_2.png" alt="Bar chart of Nutrients and their recommended dietary intake." />
