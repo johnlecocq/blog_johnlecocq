@@ -11,6 +11,7 @@ hasCJKLanguage: true
 enableEmoji: true
 paginate: 6
 
+    
 permalinks:
   post: "/post/:year/:month/:day/:slug/"
 
@@ -32,9 +33,9 @@ menu:
       url: /index.xml
 
 params:
-  description: "Reporting Since 2023"
+  description: "Data  Driven Reports Since 2023"
   footer: "&copy; John Lecocq 2023 | [Github](https://github.com/johnlecocq) | [Linkedin](https://www.linkedin.com/in/john-rooster/)"
-  github_edit: "https://github.com/johnlecocq/blog_johnlecocq/edit"
+  github_edit: "https://github.com/johnlecocq/blog_johnlecocq/edit/main/content/"
   summary_length: 300
   text:
     back: "&larr; Back to Home"

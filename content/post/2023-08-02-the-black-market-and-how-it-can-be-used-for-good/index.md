@@ -1,14 +1,15 @@
 ---
-title: "Competing with the black market"
+title: "Analysis of the Black Market using Customs and Border Patrol Confiscation Data"
 author: "John Lecocq"
 date: "2023-08-02"
 slug: "competing-with-the-black-market"
 categories:
-- Black Market
 - Economics
+- Black Market
 tags:
+- CBP
+- Drugs
 - Data Analysis
-- Solution
 ---
 
 The US black market is the sum of all un-taxed economic activity. Sounds great! Where do I sign up? Right... Well, the catch is that it is illegal. Despite this fact, it is still enormous. This article discusses:
@@ -120,7 +121,7 @@ FY2023 (FYTD)               `Drug Type`Ecstasy             `Drug Type`Fentanyl
 -281232115
 ```
 
-## Discussion
+# Discussion
 
 Although the weight of drugs confiscated by CBP appeared to be decreasing (figure 1), the value of drugs confiscated appeared to be trending normally, or even increasing (Figures 2 and 3). The reason for this appears to be an increase in fentanyl siezures. **Fentanyl is an opiate of high potency that has a high cost per lb and an apparently increasing prevalence in the hands of the authorities.**
 
