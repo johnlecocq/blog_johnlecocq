@@ -6,13 +6,22 @@
     <description>Recent content in Categories on Reports</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://johnlecocq.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://johnlecocq.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Discussion</title>
-      <link>https://johnlecocq.netlify.app/categories/discussion/</link>
+      <title>Health</title>
+      <link>https://johnlecocq.netlify.app/categories/health/</link>
+      <pubDate>Tue, 08 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnlecocq.netlify.app/categories/health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Black Market</title>
+      <link>https://johnlecocq.netlify.app/categories/black-market/</link>
       <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://johnlecocq.netlify.app/categories/discussion/</guid>
+      <guid>https://johnlecocq.netlify.app/categories/black-market/</guid>
       <description></description>
     </item>
     
@@ -22,42 +31,6 @@
       <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>https://johnlecocq.netlify.app/categories/economics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Health</title>
-      <link>https://johnlecocq.netlify.app/categories/health/</link>
-      <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnlecocq.netlify.app/categories/health/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>https://johnlecocq.netlify.app/categories/r/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      
-      <guid>https://johnlecocq.netlify.app/categories/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Example</title>
-      <link>https://johnlecocq.netlify.app/categories/example/</link>
-      <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnlecocq.netlify.app/categories/example/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://johnlecocq.netlify.app/categories/hugo/</link>
-      <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnlecocq.netlify.app/categories/hugo/</guid>
       <description></description>
     </item>
     

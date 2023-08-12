@@ -2,80 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://johnlecocq.netlify.app/tags/black-market/</loc>
-    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://johnlecocq.netlify.app/categories/</loc>
+    <lastmod>2023-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnlecocq.netlify.app/tags/data-exploration/</loc>
+    <lastmod>2023-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnlecocq.netlify.app/post/2023/08/08/exploring-recommended-daily-intake-of-nutrients/</loc>
+    <lastmod>2023-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnlecocq.netlify.app/tags/fda/</loc>
+    <lastmod>2023-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnlecocq.netlify.app/categories/health/</loc>
+    <lastmod>2023-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnlecocq.netlify.app/</loc>
+    <lastmod>2023-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnlecocq.netlify.app/tags/nih/</loc>
+    <lastmod>2023-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnlecocq.netlify.app/post/</loc>
+    <lastmod>2023-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnlecocq.netlify.app/tags/</loc>
+    <lastmod>2023-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnlecocq.netlify.app/post/2023/08/02/customs-and-border-patrol-drug-confiscations-2020-june2023/</loc>
     <lastmod>2023-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://johnlecocq.netlify.app/post/2023/08/02/competing-with-the-black-market/</loc>
+    <loc>https://johnlecocq.netlify.app/categories/black-market/</loc>
     <lastmod>2023-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://johnlecocq.netlify.app/categories/discussion/</loc>
+    <loc>https://johnlecocq.netlify.app/tags/cbp/</loc>
     <lastmod>2023-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://johnlecocq.netlify.app/tags/drug-cartels/</loc>
+    <loc>https://johnlecocq.netlify.app/tags/data-analysis/</loc>
+    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnlecocq.netlify.app/tags/drugs/</loc>
     <lastmod>2023-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://johnlecocq.netlify.app/categories/economics/</loc>
     <lastmod>2023-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/categories/health/</loc>
-    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/</loc>
-    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/tags/pharma/</loc>
-    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/post/</loc>
-    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/tags/solutions/</loc>
-    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/tags/</loc>
-    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/post/2020/12/01/hello-r-markdown/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/tags/plot/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/categories/r/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/tags/r-markdown/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/tags/regression/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/post/2017/02/14/a-plain-markdown-post/</loc>
-    <lastmod>2017-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/tags/blogdown/</loc>
-    <lastmod>2017-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/categories/example/</loc>
-    <lastmod>2017-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/categories/hugo/</loc>
-    <lastmod>2017-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/tags/markdown/</loc>
-    <lastmod>2017-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/tags/mathjax/</loc>
-    <lastmod>2017-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/tags/pandoc/</loc>
-    <lastmod>2017-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnlecocq.netlify.app/tags/rstudio/</loc>
-    <lastmod>2017-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://johnlecocq.netlify.app/about/</loc>
   </url>

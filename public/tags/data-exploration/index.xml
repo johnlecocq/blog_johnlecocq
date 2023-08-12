@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Exploration on Reports</title>
+    <link>https://johnlecocq.netlify.app/tags/data-exploration/</link>
+    <description>Recent content in Data Exploration on Reports</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://johnlecocq.netlify.app/tags/data-exploration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring The Recommended Daily Intake of Nutrients using FDA and NIH Data</title>
+      <link>https://johnlecocq.netlify.app/post/2023/08/08/exploring-recommended-daily-intake-of-nutrients/</link>
+      <pubDate>Tue, 08 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnlecocq.netlify.app/post/2023/08/08/exploring-recommended-daily-intake-of-nutrients/</guid>
+      <description>Recommended Daily Intake Recommended daily intake (RDI) refers to recommendations as to how much of a given nutrient should be consumed by a person each day. RDI levels are set forth by authoritative sources, such as: the National Institutes of Health (NIH), the Food and Drug Administration, or other prominent medical establishments. This report explores RDI using data from NIH and FDA in order to understand which micro and macro nutrients have recommendations and what these recommendations are.</description>
+    </item>
+    
+  </channel>
+</rss>

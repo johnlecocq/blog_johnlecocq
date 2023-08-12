@@ -6,37 +6,24 @@
     <description>Recent content in Posts on Reports</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://johnlecocq.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://johnlecocq.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Competing with the black market</title>
-      <link>https://johnlecocq.netlify.app/post/2023/08/02/competing-with-the-black-market/</link>
+      <title>Exploring The Recommended Daily Intake of Nutrients using FDA and NIH Data</title>
+      <link>https://johnlecocq.netlify.app/post/2023/08/08/exploring-recommended-daily-intake-of-nutrients/</link>
+      <pubDate>Tue, 08 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnlecocq.netlify.app/post/2023/08/08/exploring-recommended-daily-intake-of-nutrients/</guid>
+      <description>Recommended Daily Intake Recommended daily intake (RDI) refers to recommendations as to how much of a given nutrient should be consumed by a person each day. RDI levels are set forth by authoritative sources, such as: the National Institutes of Health (NIH), the Food and Drug Administration, or other prominent medical establishments. This report explores RDI using data from NIH and FDA in order to understand which micro and macro nutrients have recommendations and what these recommendations are.</description>
+    </item>
+    
+    <item>
+      <title>Analysis of Customs and Border Patrol Drug Confiscation Data Showing Increased YOY Values of Fentanyl Seized</title>
+      <link>https://johnlecocq.netlify.app/post/2023/08/02/customs-and-border-patrol-drug-confiscations-2020-june2023/</link>
       <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://johnlecocq.netlify.app/post/2023/08/02/competing-with-the-black-market/</guid>
+      <guid>https://johnlecocq.netlify.app/post/2023/08/02/customs-and-border-patrol-drug-confiscations-2020-june2023/</guid>
       <description>The US black market is the sum of all un-taxed economic activity. Sounds great! Where do I sign up? Right&amp;hellip; Well, the catch is that it is illegal. Despite this fact, it is still enormous. This article discusses:
-Economic activity that makes up black markets Estimated size of the US black market How that relates to other countries How the white market can compete Why this matters Black Market Basics Estimated Size of the US Black Market How does one estimate the size of the black market?</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>https://johnlecocq.netlify.app/post/2020/12/01/hello-r-markdown/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      
-      <guid>https://johnlecocq.netlify.app/post/2020/12/01/hello-r-markdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
-    </item>
-    
-    <item>
-      <title>A Plain Markdown Post</title>
-      <link>https://johnlecocq.netlify.app/post/2017/02/14/a-plain-markdown-post/</link>
-      <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnlecocq.netlify.app/post/2017/02/14/a-plain-markdown-post/</guid>
-      <description>This sample post is mainly for blogdown users. If you do not use blogdown, you can skip the first section. To know more about the Hugo XMag theme, please read the About page.
-1. Markdown or R Markdown This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
-You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.</description>
+Economic activities of the black market A low-end estimate of the US black market size How the white market can compete Why this matters I know that it sounds a bit out there to recommend drug companies should help put the black market out of business, but the situation requires attention.</description>
     </item>
     
   </channel>
