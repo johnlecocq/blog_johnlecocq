@@ -36,9 +36,8 @@ The figure below shows the RDI levels for different demographics, data from the 
 
 # Exploring Trends
 
-<<<<<<< HEAD
 From 30,000ft., the NIH data shows that infants require the same nutrients as other groups, but in smaller amounts. **However, viewing the data above in a different way (figure 3), one can see that infants require the least amount of most nutrients, excluding for vitamin A, vitamin C, iron and iodine.** Those, they require more than young children (1-3).
-=======
+
 What lessons or rules of thumb can we learn from this data? There is information relevant to every human, but what jumps off the page is likely to be different between people. Some trends in the FDA and NIH data are discussed in the following two sections, as examples of how this data may be interpreted.
 
 ## FDA
@@ -48,7 +47,6 @@ Figure 1 showed that the FDA's RDI for protein and added sugars are equal. This 
 ## NIH
 
 From 30,000ft., the NIH data shows that infants require all the same nutrients as other groups, but, generally, in smaller amounts. **For example, the comparison graph below (figure 3) shows that infants require smaller amounts of most nutrients, excepting vitamin A, vitamin C, iron and iodine.** Infants require more of these nutrients than small children do. 
->>>>>>> 834a16f51e16a3e85d80ff2958fd462dd0caeedb
 
 <div class="figure">
 <img src="{{< blogdown/postref >}}index_files/plots/RDI_plot_nih_2.png" alt="Bar chart of Nutrients and their recommended dietary intake." />
@@ -63,10 +61,4 @@ From 30,000ft., the NIH data shows that infants require all the same nutrients a
 2) How much of these foods they ingest 
 3) The nutrition content of these foods and supplements
 
-**Once a person calculates the values above, they can calculate the difference in their ADI and the ROI for their demographic.** This calculation can guide their dietary decisions to improve overall health and well being. A future report will go into detail into this calculation to aid the reader in calculating their ADI-RDI differences and determining if they need to cut back or supplement their diet. 
-
-<<<<<<< HEAD
-Until then, take care, and God bless you in Jesus' name.
-=======
-A future report will go into detail into this process to aid the reader in calculating their ADI-RDI differences and determining if they need to cut back or supplement their dietary nutrient intake. Until then, take care, and God bless you in Jesus' name.
->>>>>>> 834a16f51e16a3e85d80ff2958fd462dd0caeedb
+**Once a person calculates the values above, they can calculate the difference in their ADI and the ROI for their demographic.** This calculation can guide their dietary decisions to improve overall health and well being. A future report will go into detail into this calculation to aid the reader in calculating their ADI-RDI differences and determining if they need to cut back or supplement their diet. Until then, take care, and God bless you in Jesus' name.
