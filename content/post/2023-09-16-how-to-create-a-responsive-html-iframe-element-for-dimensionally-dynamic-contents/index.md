@@ -23,7 +23,7 @@ The excellent R team brought us Shiny, an R-focused framework for web applicatio
 
 <div class="figure">
 <img src="{{< blogdown/postref >}}index_files/www/stack-up.jpg" alt="Image of changing heights." />
-<p class="caption"><span id="fig:weight_time"></span><strong>Figure 3</strong>: Each board selection has a different height just as each selection of an application may case the app to take on a different height. We adjust to the different heights of the board with our foot placement or else we might step on an area where a board was not. Similarly, we must adjust the placement of the end of the iframe or risk losing part of an app.</p>
+<p class="caption"><span id="fig:weight_time"></span><strong>Figure 1</strong>: Each board selection has a different height just as each selection of an application may case the app to take on a different height. We adjust to the different heights of the board with our foot placement or else we might step on an area where a board was not. Similarly, we must adjust the placement of the end of the iframe or risk losing part of an app.</p>
 </div>
 
 Shiny apps come in a variety of heights, and they can even change height depending on the app functionality. This can lead to excess white space on the webpage or the app can be cut off. Luckily, there is [javascript code available](https://www.cultureofinsights.com/post/responsive-iframes-for-shiny-apps) that allows for communication between a Shiny app and an iframe. 
