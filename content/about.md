@@ -5,15 +5,13 @@ title: About Reports
 
 ## What It's All About
 
-**Reports** is a blog written by John Lecocq. It approaches various topics in a scientific and data-driven way. Hopefully, you find the content helpful or interesting!
+**Reports** is a blog written by John Lecocq. It approaches various topics in a scientific and data-driven way. 
 
 ## Collaboration
 
 If you find that important factors have been left out of a report, then contact John using the email listed at the bottom of the page or use the "Edit This Page" feature included in the top right of each report.
 
 ## Purpose
-
-What you will get from this blog is:
 
 - Reports that help characterize systems of the world
 
