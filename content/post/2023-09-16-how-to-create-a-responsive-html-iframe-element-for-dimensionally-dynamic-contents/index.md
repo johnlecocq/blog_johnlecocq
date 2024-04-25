@@ -1,5 +1,5 @@
 ---
-title: How to Create a HTML iframe that Can Dynamically Change Height
+title: How to create an HTML iframe that can dynamically change height
 author: John Lecocq
 date: '2023-09-16'
 slug: how-to-create-a-responsive-html-iframe-element-for-dimensionally-dynamic-contents
