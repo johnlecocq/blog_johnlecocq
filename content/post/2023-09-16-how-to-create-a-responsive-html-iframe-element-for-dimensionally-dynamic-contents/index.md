@@ -1,12 +1,11 @@
 ---
-title: How to Create a Responsive HTML iframe for Dimensionally Dynamic
-  Contents
+title: How to Create a HTML iframe that Can Dynamically Change Height
 author: John Lecocq
 date: '2023-09-16'
 slug: how-to-create-a-responsive-html-iframe-element-for-dimensionally-dynamic-contents
 categories:
-  - Web App Optimization
-  - Technology
+  - Web Apps
+  - Tech
 tags:
   - How to
   - RShiny
@@ -18,24 +17,21 @@ tags:
 
 # How to Embed an Dynamic iframe
 
-The excellent R team brought to us Shiny, an R-focused framework for web application development. These apps may be shared with others by hosting them on a web server. One may then embed the application a webpage with a simple iframe!
+The excellent R team brought us Shiny, an R-focused framework for web application development. These apps may be shared with others by hosting them on a web server. Once hosted on a web server, one may simply embed their web applications into a webpage using a simple iframe!
 
-However, there is an issue...
+**However, there is a problem...**
 
-Shiny apps can dynamically change in height, So when embedding these types of apps within a iframe, the iframe will not automatically change in height along with the app. This results in a dualscrollbar effect, where a scrollbar will appear within the iframe which is embedded in a page with a scrollbar. 
+Shiny apps come in a variety of heights, and they can even change height depending on the app functionality. This can lead to excess white space on the webpage or the app can be cut off. Luckily, there is [javascript code available](https://www.cultureofinsights.com/post/responsive-iframes-for-shiny-apps) that allows for communication between a Shiny app and an iframe. 
 
+# Step-by-step guide
 
-# Scrollception
-
-Luckily, this is a problem that has been encountered for, and javascript code has been written that facilitates communication between a Shiny app and an iframe. It really is quite simple. One must write some code in the Shiny app (not included here), and also write some code in the source code of the webpage where the app will be included.
+1. Write your Shiny app.
+2. Include the JS code linked to in the prior section in the Shiny app code.
+3. Add the code below to the website source code.
 
 # Code needed for the webpage
 
-Below is the code needed to embed an example app into any webpage using an iframe. Keep in mind that the src for the iframe element, in this case https://invo.shinyapps.io/Search2ool/, may need to be changed depending on which app you are embedding. There are two apps:
-
-(1) Digital Aesthetic Laser Safety Advisor (lenses) - src = https://invo.shinyapps.io/SearchTool/
-
-(2) Digital Dental Laser Safety Advisor (loupe inserts) - src = https://invo.shinyapps.io/DentalLoupeInserts/
+Below is sample code that one may use to embed an example app into any webpage using an iframe. This code goes into a the website source code. Keep in mind that the src for the iframe element, in this case https://invo.shinyapps.io/Search2ool/, will need to be changed to the URL of the app you are embedding. Contact me with any questions!
 
 ```r
 <script type="text/javascript"
