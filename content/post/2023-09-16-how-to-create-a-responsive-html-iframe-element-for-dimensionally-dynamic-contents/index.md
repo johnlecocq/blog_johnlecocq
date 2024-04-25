@@ -15,7 +15,7 @@ tags:
 
 
 
-# How to Embed an Dynamic iframe
+# How to Embed a Dynamic iframe
 
 The excellent R team brought us Shiny, an R-focused framework for web application development. These apps may be shared with others by hosting them on a web server. Once hosted on a web server, one may simply embed their web applications into a webpage using a simple iframe!
 
