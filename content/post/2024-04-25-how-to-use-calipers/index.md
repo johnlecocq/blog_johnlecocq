@@ -1,5 +1,5 @@
 ---
-title: Using, Maintaining and Servicing Calipers
+title: Calipers
 author: 'John Lecocq'
 date: '2024-04-25'
 slug: how-to-use-calipers
