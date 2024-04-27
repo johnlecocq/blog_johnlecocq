@@ -37,7 +37,7 @@ Here are a few pointers to help you reduce the amount of error you introduce int
 
 # Reading results
 
-Calipers can report digital read-outs or analog readouts. Reading a measurement from digital calipers is a straightofrward process. However, reading analog calipers is not so straightforward. There are two common types of analog calipers: Vernier and dial. Let's discuss how to read measurements from these analog calipers, separately, below.
+Calipers can report digital read-outs or analog readouts. Reading a measurement from digital calipers is a straightforward process. However, reading analog calipers is not so straightforward. There are two common types of analog calipers: Vernier and dial. Let's discuss how to read measurements from these analog calipers, separately, below.
 
 ## Vernier
 
@@ -49,7 +49,7 @@ Reading the results from Vernier calipers can seem daunting if you have never do
 
 <div class="figure" align='center'>
 <img src="{{< blogdown/postref >}}index_files/www/read-vernier.png" alt="Image of reading vernier scale." />
-<p class="caption"><span id="fig:weight_time"></span><strong>Figure 2</strong>: Notice the normal and Vernier scale. The first digits of the measurement are 22 because this is the whole number below zero on the vernier scale (left-most red arrow). However, notice that zero is close to 23. Which tells us that measurement is closer to 23 than 22. This hint means that I would start reading the Vernier scale from the right until I found where its line vertically aligned with a line on the normal scale. This value is 9 which means the third digit in the measurement is a 9 (right-most red arrow). The full measurement taken from the caliper below would be 0.229 (units vary).</p>
+<p class="caption"><span id="fig:weight_time"></span><strong>Figure 2</strong>: Notice the normal and Vernier scale. The first digits of the measurement are 21 because this is the whole number below zero on the vernier scale (left-most red arrow). However, notice that zero is close to 22. Which tells us that measurement is closer to 22 than 21. This hint means that I would start reading the Vernier scale from the right until I found where its line vertically aligned with a line on the normal scale. This value is 9 which means the third digit in the measurement is a 9 (right-most red arrow). The full measurement taken from the caliper below would be 0.219 (units vary).</p>
 </div>
 
 ## Dial
