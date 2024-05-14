@@ -1,14 +1,12 @@
 ---
-title: "Exploring The Recommended Dietary Intake of Nutrients using FDA and NIH Data"
+title: "Recommended daily intake of micronutrients"
 author: "John Lecocq"
 date: '2023-08-08'
 slug: "exploring-recommended-dietary-intake-of-nutrients"
 categories:
-  - Health
-tags:
-  - NIH
-  - FDA
   - Data Exploration
+tags:
+  - Nutrition
 ---
 
 # Recommended Dietary Intake 

@@ -1,5 +1,5 @@
 ---
-title: "Analysis of Customs and Border Patrol Drug Confiscation Data Showing Increased YOY Values of Fentanyl Seized"
+title: "(2020 - June 2023) CBP confiscations of illegal drugs"
 author: "John Lecocq"
 date: "2023-08-02"
 slug: "customs-and-border-patrol-drug-confiscations-2020-June2023"
