@@ -3,8 +3,8 @@ title: Interative application for dietary analysis - macro and micronutrients
 author: 'John Lecocq'
 date: '2024-06-05'
 slug: interative-application-for-dietary-analysis-macro-and-micronutrients
-categories: []
-tags: []
+categories: ['Web Apps']
+tags: ['Dietary Analysis', 'RShiny']
 ---
 
 # Dietary analysis

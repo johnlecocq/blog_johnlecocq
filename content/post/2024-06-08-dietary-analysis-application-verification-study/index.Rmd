@@ -1,0 +1,128 @@
+---
+title: Dietary Analysis Application
+author: John Lecocq
+date: '2024-06-08'
+slug: dietary-analysis-application-verification-study
+categories:
+  - Software Verification
+tags:
+  - Web Applications
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, out.width = "90%", dpi = 330, fig.align = "center", warning = F, message = F, comment = F)
+library(dplyr)
+library(magrittr)
+library(purrr)
+library(formattable)
+library(ggplot2)
+library(tidyr)
+library(forcats)
+library(stringr)
+```
+
+# Study Objective
+
+To verify the accuracy of a nutrient calculator application [1](invo.shinyapps.io/nutrientCalculator/).
+
+# Procedure
+
+1) Look up 10 foods in the USDA's "What's In The Foods You Eat *Search Tool*, 2019-2020" [2](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/food-surveys-research-group/docs/whats-in-the-foods-you-eat-search-tool/)
+2) Look up those same 10 foods in the nutrient calculator
+3) Document the nutritional content of the foods from both apps
+4) Visualize results
+5) Calculate differences
+6) Evaluate
+
+# Results
+
+```{r}
+raw_data <- readxl::read_excel("./results-6-8-24.xlsx")
+
+nutrients_of_interest <- raw_data %>% 
+  group_by(nutrient) %>% 
+  summarise("n" = n()) %>% 
+  filter(n>12)
+
+clean_data <- map_df(nutrients_of_interest$nutrient,
+                     ~filter(raw_data, nutrient == .x))
+
+difference_data <- pivot_wider(clean_data, names_from = source, values_from = amount) %>% 
+  filter(usda >0) %>% 
+  mutate("Absolute Difference" = abs(usda-app),
+    "% Difference" = percent(abs(usda-app)/mean(c(app,usda)))) 
+```
+
+The raw data (985 unique observations) was read into R [3](https://www.R-project.org/). The raw data was filtered, using the dplyr package [4](https://CRAN.R-project.org/package=dplyr), so that only matching nutrients from each app would be compared (536 unique observations). Note, the reason the USDA app contained more nutrients than the app under verification was because the app under verification included only the nutrients with available daily reference intakes. The matching nutrients that were compared are (presented using the knitr package [5](https://yihui.org/knitr/>.])):
+
+```{r}
+knitr::kable(tibble("Matching Nutrients"=unique(clean_data$nutrient)))
+```
+
+The tidy data was then transformed, using the tidyr [6](https://CRAN.R-project.org/package=tidyr) and dplyr packages, into a form that allowed for comparison of nutrient content between the applications by food and by nutrient (249 unique observations). The first 12 observations from this data are shown below:
+
+```{r}
+knitr::kable(head(difference_data, 12))
+```
+
+```{r}
+num_diff <- difference_data %>% 
+  filter(`% Difference`>.129)
+
+# mean(difference_data$`% Difference`)
+```
+
+For each food and each nutrient, a percent difference was calculated. Of the 249 observations of by food and by nutrient percent differences, 47 (18.9%) differed by more than 5% and 35 (14%) differed by more than 10%. The average percent difference in the data was 12.9% with a max of 677.8% (the amount of sodium in grilled cod). 29 (11.6%) of the percent differences were greater than the average, as shown below. 
+
+```{r}
+ggplot(num_diff, aes(nutrient, 100*`% Difference`, fill = description))+
+  geom_col(color='black', alpha=0.75)+
+  labs(y = "% Diff", x = "Nutrient", title = "Figure 1 - % differences greater than the average (12.9%)")+
+  theme(
+      text = element_text(family = 'Arial',
+                              color = "black",
+                              size = 14),
+          axis.text.x = element_text(angle = 60,
+                                     hjust = 1),
+          plot.background = element_rect(fill = 'ghostwhite'),
+      panel.border = element_rect(fill=NA, colour = "black"),
+          panel.background = element_rect(color = "black",
+                                          fill = 'ghostwhite'),
+          panel.grid = element_line(color = 'darkgrey',
+                                    linewidth = 0.33),
+          panel.grid.minor = element_line(color = 'lightgrey',
+                                          linewidth = 0.4),
+          panel.grid.major.x = element_line(color = 'ghostwhite'),
+          strip.background = element_blank(),
+          strip.text = element_text(size = 20, face = 'bold'),
+          strip.placement = "outside",
+      legend.position = "top",
+      legend.title = element_blank(),
+      legend.background = element_rect(fill='ghostwhite'))
+```
+
+
+# Discussion
+
+This app verification contained a large sample of 249 nutrient comparisons. Overall, the difference between the USDA's *Search Tool* and the app under verification was reasonably small at 12.9% average percent difference. There were 29 observations with percent differences higher than the mean. Most of these large differences were observed in fish (salmon and cod). If salmon and cod were removed from this study (leaving 199 unique observations) the average percent difference would drop to 3.9%.
+
+The large percent differences in the nutritional content of fish can be explained by two main factors (1) seasonings/additives used and (2) location/habitat of the fish. The reasoning behind the first and second factor comes from figure 1 where one can clearly see large differences for the amounts of sodium, potassium and phosphorus. These atoms are common in seasonings and additives, and it is likely that the same seasonings/additives were not used for both samples.
+
+# Conclusion
+
+The app was found to agree with the USDA app 87.1% of the time based on a large sample size of 249 observations. Most of the error in the app was found to be due to large differences found in the nutritional content of the fish included in the study. A likely explanation for this is the presence of seasonings/additives in one sample, but not the other. The observed differences were not systemic i.e. one or more nutrient was not consistently out of balance with the standard set. This study shows that the app, which relies on the USDA's SR Legacy data, functions in a comparable manner to the USDA's own app, which functions on the Food and Nutrient Database for Dietary Studies data. Now that comparable accuracy has been determined between the application, a test of speed should be conducted to determine if one application is more time efficient than the other. 
+
+# Sources
+
+[1] John Lecocq, Nutrient Calculator Application, (Link)[invo.shinyapps.io/nutrientCalculator]
+
+[2] USDA. What's In The Foods You Eat Search Tool, 2019-2020. https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/food-surveys-research-group/docs/whats-in-the-foods-you-eat-search-tool/ 
+
+[3] R Core Team (2021). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL https://www.R-project.org/.
+
+[4] Hadley Wickham, Romain François, Lionel Henry, Kirill Müller and Davis Vaughan (2023). dplyr: A Grammar of Data Manipulation. R package version 1.1.4. https://CRAN.R-project.org/package=dplyr
+
+[5] Xie Y (2023). _knitr: A General-Purpose Package for Dynamic Report Generation in R_. R package version 1.45, <URL:
+https://yihui.org/knitr/>.]
+
+[6] Hadley Wickham, Davis Vaughan and Maximilian Girlich (2024). tidyr: Tidy Messy Data. R package version 1.3.1. https://CRAN.R-project.org/package=tidyr
